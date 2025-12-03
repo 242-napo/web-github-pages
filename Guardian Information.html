@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/guardian.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardian Information</title>
+  <link rel="stylesheet" href="./Guardian Information_files/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>BELIEVERS GOD'S WAY ACACDEMY School</h2>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+      <li><a href="http://127.0.0.1:5500/programs.html">Programs</a></li>
+      <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+      <li><a href="http://127.0.0.1:5500/student.html">Student Info</a></li>
+      <li><a href="http://127.0.0.1:5500/guardian.html">Guardian Info</a></li>
+      <li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="login-box">
+    <h2>Guardian Information Form</h2>
+
+    <form>
+      <label>Guardian's Full Name</label>
+      <input type="text" placeholder="Enter guardian&#39;s name">
+
+      <label>Relationship to Student</label>
+      <select>
+        <option>Select relationship</option>
+        <option>Father</option>
+        <option>Mother</option>
+        <option>Sibling</option>
+        <option>Relative</option>
+        <option>Other</option>
+      </select>
+
+      <label>Phone Number</label>
+      <input type="text" placeholder="Enter phone number">
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter email">
+
+      <label>Occupation</label>
+      <input type="text" placeholder="Enter occupation">
+
+      <label>Residential Address</label>
+      <input type="text" placeholder="Enter address">
+
+      <button>Submit</button>
+    </form>
+
+  </div>
+</div>
+
+<footer>© 2025 BGWA School.</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
